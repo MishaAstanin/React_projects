@@ -19,6 +19,7 @@ car-shop-project/
 ├── package.json
 └── README.md
 ```
+![Архитектура](https://github.com/user-attachments/assets/c73c2ddd-3f65-4d2c-8026-7f05db53a455)
 
 ## Функциональность
 - Просмотр доступных автомобилей с детальными характеристиками
