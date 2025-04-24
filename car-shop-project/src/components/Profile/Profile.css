@@ -1,0 +1,19 @@
+.profile-container {
+    padding: 1rem;
+}
+
+.profile-container button {
+    max-width: 100px;
+    padding: 0.5em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-container button:hover {
+    background-color: #0056b3;
+}

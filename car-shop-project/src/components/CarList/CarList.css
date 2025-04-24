@@ -1,0 +1,6 @@
+.catalog-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 15px;
+}
