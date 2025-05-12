@@ -3,6 +3,9 @@ const cors = require('cors');
 const { Pool } = require('pg');
 
 const pool = new Pool({
+    ssl: {
+        rejectUnauthorized: false
+    },
     user: 'car_shop_db_q5hd_user',
     host: 'dpg-d0h4fg8dl3ps73ci28q0-a.oregon-postgres.render.com',
     database: 'car_shop_db_q5hd',
