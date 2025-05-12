@@ -29,7 +29,7 @@ export default function RegisterPage() {
                     token: user.accessToken
                 }))
 
-                await axios.post('http://localhost:3001/api/register', {
+                await axios.post('https://react-projects-ryoh.vercel.app/api/register', {
                     email: user.email,
                     uid: user.uid,
                     role: selectedRole,
