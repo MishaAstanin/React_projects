@@ -9,7 +9,7 @@ export const useFetchCarList = () => {
     useEffect(() => {
         const fetchCarList = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/cars')
+                const response = await axios.get('https://react-projects-ryoh.vercel.app/api/cars')
                 setList(response.data)
             } catch (err) {
                 setError(err.message)
@@ -32,7 +32,7 @@ export const useFetchCar = (carId) => {
     useEffect(() => {
         const fetchCar = async () => {
             try {
-                const response = await axios.get(`http://localhost:3001/api/cars/${carId}`)
+                const response = await axios.get(`https://react-projects-ryoh.vercel.app/api/cars/${carId}`)
                 setCar(response.data)
             } catch (err) {
                 setError(err.message)
@@ -57,7 +57,7 @@ export const useFetchTestList = (uid) => {
     useEffect(() => {
         const fetchTestList = async () => {
             try {
-                const response = await axios.get(`http://localhost:3001/api/profile/${uid}`)
+                const response = await axios.get(`https://react-projects-ryoh.vercel.app/api/profile/${uid}`)
                 setList(response.data)
             } catch (err) {
                 setError(err.message)
@@ -81,7 +81,7 @@ export const useFetchTestCount = (id) => {
     useEffect(() => {
         const fetchTestCount = async () => {
             try {
-                const response = await axios.get(`http://localhost:3001/api/cars/tests/${id}`)
+                const response = await axios.get(`https://react-projects-ryoh.vercel.app/api/cars/tests/${id}`)
                 setCount(response.data)
             } catch (err) {
                 setError(err.message)
@@ -105,7 +105,7 @@ export const useFetchTestUserCount = (uid, id) => {
     useEffect(() => {
         const fetchTestUserCount = async () => {
             try {
-                const response = await axios.get(`http://localhost:3001/api/cars/tests/users/${uid}/${id}`)
+                const response = await axios.get(`https://react-projects-ryoh.vercel.app/api/cars/tests/users/${uid}/${id}`)
                 setCount(response.data)
             } catch (err) {
                 setError(err.message)
