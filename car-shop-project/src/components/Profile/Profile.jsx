@@ -22,7 +22,7 @@ export default function Profile() {
         const getTestList = async () => {
             try {
                 if (!isAuth) return
-                const response = await axios.get(`http://localhost:3001/api/profile/${id}`)
+                const response = await axios.get(`https://react-projects-ryoh.vercel.app/api/profile/${id}`)
                 setList(response.data)
             } catch (error) {
                 setError(error.response?.data || error.message)
