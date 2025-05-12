@@ -14,6 +14,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
+
 
 app.get('/api/cars', async (req, res) => {
     try {
