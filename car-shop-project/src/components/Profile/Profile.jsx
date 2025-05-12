@@ -36,7 +36,7 @@ export default function Profile() {
 
     const handleDelete = async (testDriveId) => {
         try {
-            await axios.delete(`http://localhost:3001/api/test-drives/${testDriveId}`)
+            await axios.delete(`https://react-projects-ryoh.vercel.app/api/test-drives/${testDriveId}`)
             setList(prevList => prevList.filter(item => item.id !== testDriveId))
             alert('Тест-драйв удален')
         } catch (error) {
