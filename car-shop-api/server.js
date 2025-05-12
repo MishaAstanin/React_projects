@@ -3,10 +3,10 @@ const cors = require('cors');
 const { Pool } = require('pg');
 
 const pool = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'test_drive_db',
-    password: 'password',
+    user: 'car_shop_db_q5hd_user',
+    host: 'dpg-d0h4fg8dl3ps73ci28q0-a.oregon-postgres.render.com',
+    database: 'car_shop_db_q5hd',
+    password: 'iB02XAeJNkzdigf1Qb6Hll12BS2d2OZ0',
     port: 5432
 });
 
