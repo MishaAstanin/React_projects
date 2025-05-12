@@ -200,7 +200,4 @@ app.delete('/api/test-drives/:id', async (req, res) => {
 });
 
 
-const PORT = 3001;
-app.listen(PORT, () => {
-    console.log(`Сервер запущен на порту ${PORT}`);
-});
+module.exports = app;
